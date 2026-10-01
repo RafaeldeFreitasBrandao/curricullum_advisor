@@ -1,6 +1,6 @@
 # Curriculum Advisor (Prolog)
 
-Este é um trabalho acadêmico da disciplina de Programação Lógica e Funcional, o objetivo dele é fixiar os fundamentos da programação lógica através de um problema concreto. Esse projeto tem como propósito representar a grade curricular do Curso de Ciência da Computação com uma base de conhecimento em Prolog, sendo capaz de responder as seguintes perguntas:
+Este é um trabalho acadêmico da disciplina de Programação Lógica e Funcional, o objetivo dele é fixar os fundamentos da programação lógica através de um problema concreto. Esse projeto tem como propósito representar a grade curricular do Curso de Ciência da Computação com uma base de conhecimento em Prolog, sendo capaz de responder as seguintes perguntas:
 
 1. "Quais disciplinas eu posso cursar?"
 2. "Existe algum caminho válido daqui até a formatura?"
