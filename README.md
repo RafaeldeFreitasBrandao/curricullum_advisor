@@ -120,15 +120,10 @@ As regras de elegibilidade verificam e ditam quais matérias o aluno pode cursar
 | Predicado | O que faz |
 |-----------|-----------|
 | prerequisitos_ok(Aluno, Disciplina) | Verifica se o aluno já cursou todos os pré-requisitos diretos da disciplina. |
-
 | pode_cursar(Aluno, Disciplina) | Verifica se os pré-requisitos estão ok e o aluno ainda não cursou a disciplina. |
-
 | disciplinas_liberadas(Aluno, Lista) | Lista todas as disciplinas que o aluno pode cursar agora. |
-
 | disciplinas_pendentes(Aluno, Lista) | Lista todas as obrigatórias que o aluno ainda não cursou, liberadas ou não. |
-
 | creditos_cursados(Aluno, Total) | Soma os créditos de todas as disciplinas que o aluno já cursou. |
-
 | somaLista(Lista, Soma) | Auxiliar: soma os números de uma lista por recursão. |
 
 ## Camada 3: Fecho Transitivo e Geração de Trilhas
@@ -138,23 +133,14 @@ Aqui é onde é validado todos os pré-requisitos de uma disciplina (diretos ou 
 | Predicado | O que faz |
 |-----------|-----------|
 | prerequisito_transitivo(Disciplina, Ancestral) | Encontra todos os pré-requisitos diretos e indiretos de uma disciplina. |
-
 | transitivo(Disciplina, Ancestral, Visitados) | predicado auxiliar: faz a recursão do fecho transitivo, guardando as disciplinas já visitadas para não entrar em loop. |
-
 | existe_ciclo(Disciplina) | Verdadeiro se a disciplina é pré-requisito dela mesma. |
-
 | trilha_valida(Aluno, MaxCreditoSemestre, Trilha) | Gera uma trilha até a formatura, uma lista de semestres, cada um com uma lista de disciplinas. |
-
 | tracar_Trilha(Cursadas, Max, N, Trilha) | predicado auxiliar: monta a trilha semestre a semestre, até o aluno se formar ou até atingir o limite de 12 semestres. |
-
 | cabe_no_prazo(Cursadas, Max, N) | predicado auxiliar: descarta caminhos em que as obrigatórias que faltam não cabem nos semestres restantes. |
-
 | formou(Cursadas) | Verdadeiro se todas as obrigatórias já foram cursadas. |
-
 | disponivel(Cursadas, Disciplina) | Verifica se a disciplina ainda não foi cursada e todos os seus pré-requisitos já foram. |
-
 | escolher(Disponiveis, Sobra, Semestre) | Escolhe um grupo de disciplinas disponíveis cuja soma de créditos cabe no limite do semestre. |
-
 | varias_trilhas(Aluno, MaxCreditos, Qtd, Lista) | Devolve uma lista com as primeiras Qtd trilhas válidas do aluno. |
 
 
