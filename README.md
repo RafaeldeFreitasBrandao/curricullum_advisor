@@ -1,4 +1,5 @@
 # Curriculum Advisor (Prolog)
+**Alunos:**Arthur Domingues, Carlos Eduardo Aguiar Sacerdote, Gustavo Fagundes e Rafael de Freitas Brandão
 
 Este é um trabalho acadêmico da disciplina de Programação Lógica e Funcional, o objetivo dele é fixar os fundamentos da programação lógica através de um problema concreto. Esse projeto tem como propósito representar a grade curricular do Curso de Ciência da Computação com uma base de conhecimento em Prolog, sendo capaz de responder as seguintes perguntas:
 
